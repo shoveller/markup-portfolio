@@ -15,6 +15,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.21.0",
+    "@storybook/addon-a11y": "^6.5.16",
     "@storybook/addon-actions": "^6.5.16",
     "@storybook/addon-essentials": "^6.5.16",
     "@storybook/addon-interactions": "^6.5.16",
@@ -23,6 +24,7 @@
     "@storybook/html": "^6.5.16",
     "@storybook/testing-library": "^0.0.13",
     "@typescript-eslint/eslint-plugin": "^5.54.0",
+    "@whitespace/storybook-addon-html": "^5.1.1",
     "autoprefixer": "^10.4.13",
     "babel-loader": "^8.3.0",
     "eslint": "^8.35.0",
@@ -32,6 +34,7 @@
     "lint-staged": "^13.1.2",
     "postcss": "^8.4.21",
     "postcss-preset-env": "^8.0.1",
+    "react-syntax-highlighter": "^15.5.0",
     "sd-tailwindcss-transformer": "^1.2.0",
     "sd-tailwindcss-transformer-enhancer": "^0.0.1",
     "style-dictionary": "^3.7.2",
