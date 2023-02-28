@@ -19,6 +19,7 @@
     "@storybook/builder-vite": "^0.4.2",
     "@storybook/html": "^6.5.16",
     "@storybook/testing-library": "^0.0.13",
+    "@typescript-eslint/eslint-plugin": "^5.54.0",
     "babel-loader": "^8.3.0",
     "eslint": "^8.35.0",
     "eslint-config-plugin": "^1.0.11",

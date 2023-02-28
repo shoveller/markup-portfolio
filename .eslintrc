@@ -1,0 +1,159 @@
+{
+  "env": {
+    "node": true,
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "prettier",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "overrides": [],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": [
+    "@typescript-eslint"
+  ],
+  "rules": {
+    "no-var": [
+      "error"
+    ],
+    "linebreak-style": [
+      "error",
+      "unix"
+    ],
+    "semi": [
+      "error",
+      "never"
+    ],
+    "prefer-spread": [
+      "error"
+    ],
+    "no-unused-expressions": [
+      "error"
+    ],
+    "no-new-func": [
+      "error"
+    ],
+    "no-labels": [
+      "error"
+    ],
+    "no-extend-native": [
+      "error"
+    ],
+    "no-eval": [
+      "error"
+    ],
+    "no-constructor-return": [
+      "error"
+    ],
+    "no-else-return": [
+      "error"
+    ],
+    "no-unsafe-optional-chaining": [
+      "error"
+    ],
+    "no-unreachable-loop": [
+      "error"
+    ],
+    "no-unreachable": [
+      "error"
+    ],
+    "no-import-assign": [
+      "error"
+    ],
+    "no-param-reassign": [
+      "error"
+    ],
+    "no-use-before-define": [
+      "error"
+    ],
+    "max-params": ["error", 1],
+    "max-depth": [
+      "error",
+      {
+        "max": 1
+      }
+    ],
+    "padding-line-between-statements": [
+      "error",
+      {
+        "blankLine": "always",
+        "prev": "*",
+        "next": "return"
+      }
+    ],
+    "no-unneeded-ternary": [
+      "error",
+      {
+        "defaultAssignment": false
+      }
+    ],
+    "quotes": [
+      "error",
+      "single",
+      {
+        "avoidEscape": true
+      }
+    ],
+    "computed-property-spacing": [
+      "error",
+      "never",
+      {
+        "enforceForClassMembers": true
+      }
+    ],
+    "object-curly-spacing": [
+      "error",
+      "always"
+    ],
+    "array-bracket-spacing": [
+      "error",
+      "never"
+    ],
+    "brace-style": [
+      "error"
+    ],
+    "curly": [
+      "error",
+      "multi-line",
+      "consistent"
+    ],
+    "no-debugger": [
+      "warn"
+    ],
+    "no-restricted-globals": [
+      "off"
+    ],
+    "no-alert": [
+      "warn"
+    ],
+    "no-console": [
+      "warn",
+      {
+        "allow": [
+          "warn",
+          "error"
+        ]
+      }
+    ],
+    "jsx-quotes": [
+      "error",
+      "prefer-double"
+    ],
+    "prefer-template": [
+      "error"
+    ],
+    "quote-props": [
+      "error",
+      "as-needed"
+    ],
+    "no-empty": [
+      "error"
+    ]
+  }
+}
