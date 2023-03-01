@@ -72,7 +72,7 @@
     "no-use-before-define": [
       "error"
     ],
-    "max-params": ["error", 1],
+    "max-params": ["error", 2],
     "max-depth": [
       "error",
       {

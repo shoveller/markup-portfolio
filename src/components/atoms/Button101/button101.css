@@ -1,0 +1,45 @@
+@import "../../../../public/css/index.css";
+
+.ui-button {
+    @apply rounded-full;
+
+    @apply disabled:opacity-40;
+
+    /*size[s]*/
+    @apply py-3.5 px-6;
+    @apply data-[size=medium]:py-3.5 data-[size=medium]:px-5;
+    @apply data-[size=small]:py-2 data-[size=small]:px-4;
+    @apply data-[size=full]:w-full;
+    /*size[e]*/
+
+    /*font-size[s]*/
+    @apply text-base;
+    @apply data-[size=medium]:text-sm;
+    @apply data-[size=small]:text-xs;
+    /*font-size[e]*/
+
+    /*font-weight[s]*/
+    @apply font-medium;
+    @apply data-[size=large]:font-bold;
+    @apply data-[size=full]:font-bold;
+    /*font-weight[e]*/
+
+    /*bg color[s]*/
+    @apply bg-[#1A84EA] hover:bg-[#0E6FDB];
+    @apply data-[color=secondary]:bg-white data-[color=secondary]:hover:bg-[#EDF1F1];
+    @apply data-[color=tertiary]:bg-white data-[color=tertiary]:hover:bg-[#EDF1F1];
+    @apply data-[color=critical]:bg-[#EB4545] data-[color=critical]:hover:bg-[#C20000];
+    /*bg color[e]*/
+
+    /*color[s]*/
+    @apply text-[#ffffff];
+    @apply data-[color=secondary]:text-[#1A84EA] data-[color=secondary]:hover:text-[#1A84EA];
+    @apply data-[color=tertiary]:text-[#4A5457] data-[color=tertiary]:hover:text-[#4A5457];
+    /*color[e]*/
+
+    /*border[s]*/
+    @apply data-[color=secondary]:border data-[color=secondary]:border-[#1A84EA];
+    @apply data-[color=tertiary]:border data-[color=tertiary]:border-[#4A5457];
+    /*border[e]*/
+}
+

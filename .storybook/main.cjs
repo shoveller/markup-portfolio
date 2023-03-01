@@ -9,6 +9,7 @@ module.exports = {
     '@storybook/addon-interactions',
     '@whitespace/storybook-addon-html',
     '@storybook/addon-a11y',
+    'storybook-addon-designs',
   ],
   framework: '@storybook/html',
   core: {
