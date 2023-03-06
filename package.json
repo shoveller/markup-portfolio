@@ -11,9 +11,11 @@
     "lint:css": "stylelint '**/*.css'",
     "pretest": "npm run lint:css",
     "prepare": "husky install",
+    "chromatic": "chromatic --project-token=426cadb55b12",
     "build-storybook": "build-storybook",
-    "push-storybook": "gh-pages -d storybook-static -b gh-pages",
-    "publish-storybook": "run-s build-storybook push-storybook"
+    "push-storybook": "gh-pages -d storybook-static -b gh-pages -r https://github.com/shoveller/markup-portfolio-storybook",
+    "clean-storybook": "rimraf storybook-static",
+    "publish-storybook": "run-s build-storybook push-storybook clean-storybook"
   },
   "devDependencies": {
     "@babel/core": "^7.21.0",
@@ -43,6 +45,7 @@
     "postcss": "^8.4.21",
     "postcss-preset-env": "^8.0.1",
     "react-syntax-highlighter": "^15.5.0",
+    "rimraf": "^4.3.0",
     "sd-tailwindcss-transformer": "^1.2.0",
     "sd-tailwindcss-transformer-enhancer": "^0.0.1",
     "storybook-addon-designs": "^6.3.1",
