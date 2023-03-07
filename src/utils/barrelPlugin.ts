@@ -63,13 +63,14 @@ export default (options: Options): Plugin => {
     const content = `${[
       header,
       ...directories.map((d) => `export * from './${d.replace('.ts', '')}'`),
-      ...components.map(
-        (c) =>
-          `export { default as ${basename(c, extname(c))} } from './${c.replace(
-            '.ts',
-            '',
-          )}'`,
-      ),
+      ...components.map((c) => {
+        const filePath = c.replace('.ts', '')
+
+        return `export { default as ${basename(
+          c,
+          extname(c),
+        )} } from './${filePath}'`
+      }),
     ].join('\n')}\n`
 
     await writeFile(join(dir, `index.${typescript ? 'ts' : 'js'}`), content)

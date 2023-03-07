@@ -4,3 +4,4 @@ package-lock.json
 tsconfig.json
 *.d.ts
 storybook-static
+dist

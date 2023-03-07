@@ -1,12 +1,12 @@
 import { defineConfig } from 'vite'
 import tsconfigPaths from 'vite-tsconfig-paths'
 import barrels from './src/utils/barrelPlugin'
-
 export default defineConfig({
   build: {
     lib: {
       entry: 'src/components',
       name: 'libs',
+      fileName: 'widgets',
       formats: ['iife'],
     },
     sourcemap: 'inline',
